@@ -13,7 +13,7 @@ from truck_api.near_search import near_search
 api.add_resource(district_search, '/api/district/search')
 api.add_resource(near_search, '/api/near/search')
 
-app.config['RESTFUL_JSON'] = {'ensure_ascii': False}
+app.config['JSON_AS_ASCII'] = False
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=8000, debug=True)
